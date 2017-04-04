@@ -4,6 +4,7 @@
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   open = "!f() { git remote -v | grep $1 | grep fetch | { read x; echo ${x/*github.com://}; } | { read x; echo ${x/.git*//}; } | { read x; open https://www.github.com$x;} }; f"
+	restack = pull --rebase root master
 [user]
 	email = hjl316@nyu.edu
 	name = lekamj
