@@ -1,0 +1,8 @@
+#MacOS
+.DS_STORE
+
+#Vim
+*.swp
+
+#ElasticSearch
+dockerFiles/elastic-search/nodes/*
