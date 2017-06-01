@@ -12,5 +12,5 @@ then
   echo "FYI - Docker is not running"
 elif [[ "$docker_running" == *"Running"* ]]
 then
-  eval "$(docker-machine env dev)"
+  eval "$(docker-machine env default)"
 fi
