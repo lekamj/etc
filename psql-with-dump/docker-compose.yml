@@ -1,0 +1,12 @@
+version: "2"
+services:
+  test_db:
+    build:
+      dockerfile: ./PostgresDockerfile
+      context: .
+    volumes:
+      - ./dump/:/docker-entrypoint-initdb.d/
+    environment:
+     - POSTGRES_DB=db 
+     - POSTGRES_PASSWORD=this_is_not_a_secret
+     - POSTGRES_USER=dbuser
