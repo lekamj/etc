@@ -1,9 +1,11 @@
 version: "2"
 services:
-  test_db:
+  dump_recreate_db:
     build:
       dockerfile: ./PostgresDockerfile
       context: .
+    ports:
+      - "5432:5432"
     volumes:
       - ./dump/:/docker-entrypoint-initdb.d/
     environment:
