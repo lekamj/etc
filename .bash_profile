@@ -7,7 +7,7 @@ if [ -f ~/.git-completion.bash ]; then
 fi
 
 docker_running=$(docker-machine ls | grep default)
-if [[ "$docker_runnig" == *"Stopped"* ]]
+if [[ "$docker_running" != *"Running"* ]]
 then
   echo "FYI - Docker is not running"
 elif [[ "$docker_running" == *"Running"* ]]
