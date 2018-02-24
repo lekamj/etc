@@ -22,7 +22,7 @@ brew install docker-compose
 brew install docker-machine-nfs
 
 docker-machine create default --virtualbox-cpu-count "-1" --virtualbox-disk-size "80000" --virtualbox-memory "8192"
-docker-machine nfs default
+docker-machine-nfs default
 
 #####################################
 # Install Debugging Tools
