@@ -1,0 +1,39 @@
+#! /bin/bash -e
+
+#####################################
+# Install homebrew
+#####################################
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+
+#####################################
+# Install for mobile/web development
+#####################################
+brew install node
+brew install watchman
+
+#####################################
+# Install/Setup Docker
+#####################################
+brew cask install virtualbox
+brew install docker
+brew install docker-machine
+brew install docker-compose
+brew install docker-machine-nfs
+
+docker-machine create default --virtualbox-cpu-count "-1" --virtualbox-disk-size "80000" --virtualbox-memory "8192"
+docker-machine nfs default
+
+#####################################
+# Install Debugging Tools
+#####################################
+brew install sqlite
+brew install postgresql
+
+#########################################
+# Additional Tools for mobile development
+#########################################
+sudo gem install cocoapods
+npm install -g react-native-cli
+
+npm install -g npm@3.10.10
