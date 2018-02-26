@@ -36,5 +36,6 @@ brew install postgresql
 #########################################
 sudo gem install cocoapods
 npm install -g react-native-cli
+brew cask install ngrok
 
 npm install -g npm@3.10.10
