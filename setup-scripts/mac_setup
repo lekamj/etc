@@ -9,8 +9,9 @@
 #####################################
 # Install for mobile/web development
 #####################################
-brew install node
+brew install nvm
 brew install watchman
+nvm install 6
 
 #####################################
 # Install/Setup Docker
