@@ -14,18 +14,6 @@ brew install watchman
 nvm install 6
 
 #####################################
-# Install/Setup Docker
-#####################################
-brew cask install virtualbox
-brew install docker
-brew install docker-machine
-brew install docker-compose
-brew install docker-machine-nfs
-
-docker-machine create default --virtualbox-cpu-count "-1" --virtualbox-disk-size "80000" --virtualbox-memory "8192"
-docker-machine-nfs default
-
-#####################################
 # Install Debugging Tools
 #####################################
 brew install sqlite
