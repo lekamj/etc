@@ -1,1 +1,2 @@
 https://github.com/open-guides/og-aws#learning-and-career-development
+https://en.wikiquote.org/wiki/Martin_Fowler
